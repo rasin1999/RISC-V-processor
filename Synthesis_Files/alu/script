@@ -1,0 +1,247 @@
+######################################################################
+
+# Created by Genus(TM) Synthesis Solution 16.13-s036_1 on Mon Feb 20 00:25:32 +0600 2023
+
+# This file contains the RC script for /designs/alu
+
+######################################################################
+
+::legacy::set_attribute -quiet init_lib_search_path /home/cad/VLSI2Lab/Digital/library/ /
+::legacy::set_attribute -quiet common_ui false /
+::legacy::set_attribute -quiet design_mode_process no_value /
+::legacy::set_attribute -quiet phys_assume_met_fill 0.0 /
+::legacy::set_attribute -quiet phys_use_invs_extraction false /
+::legacy::set_attribute -quiet phys_route_blockage_free false /
+::legacy::set_attribute -quiet runtime_by_stage { {to_generic 0 28 0 9}  {first_condense 2 32 3 13}  {reify 5 37 8 22}  {global_incr_map 1 38 0 22}  {incr_opt 1 39 0 23} } /
+::legacy::set_attribute -quiet tinfo_tstamp_file .rs_vlsi19.tstamp /
+::legacy::set_attribute -quiet syn_map_effort medium /
+::legacy::set_attribute -quiet syn_opt_effort medium /
+::legacy::set_attribute -quiet flow_metrics_snapshot_uuid 51a7cd80 /
+::legacy::set_attribute -quiet super_thread_servers {localhost localhost localhost localhost localhost localhost localhost localhost   } /
+::legacy::set_attribute -quiet phys_use_segment_parasitics true /
+::legacy::set_attribute -quiet probabilistic_extraction true /
+::legacy::set_attribute -quiet ple_correlation_factors {1.9000 2.0000} /
+::legacy::set_attribute -quiet maximum_interval_of_vias inf /
+::legacy::set_attribute -quiet interconnect_mode wireload /
+::legacy::set_attribute -quiet wireload_mode enclosed /
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X12
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X3
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X6
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX12
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX16
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX20
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX3
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX6
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX12
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX16
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX20
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX3
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX6
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X12
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X3
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X6
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKXOR2X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKXOR2X2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKXOR2X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKXOR2X8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY1X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY1X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY2X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY2X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY3X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY3X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY4X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY4X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFHQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFHQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFHQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFHQX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFNSRX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFNSRX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFNSRX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFNSRXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFQXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRHQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRHQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRHQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRHQX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSHQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSHQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSHQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSHQX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRHQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRHQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRHQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRHQX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFTRX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFTRX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFTRX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFTRXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFXL
+::legacy::set_attribute -quiet tree_type balanced_tree /libraries/slow_vdd1v0/operating_conditions/PVT_0P9V_125C
+::legacy::set_attribute -quiet tree_type balanced_tree /libraries/slow_vdd1v0/operating_conditions/_nominal_
+# BEGIN MSV SECTION
+# END MSV SECTION
+define_clock -name func_clk -domain domain_1 -period 10000.0 -divide_period 1 -rise 0 -divide_rise 1 -fall 3 -divide_fall 5 -design /designs/alu {}
+define_cost_group -design /designs/alu -name func_clk
+external_delay -accumulate -input {400.0 400.0 400.0 400.0} -clock /designs/alu/timing/clock_domains/domain_1/func_clk -name alu.sdc_line_29 {{/designs/alu/ports_in/alucontrol[3]}}
+external_delay -accumulate -input {400.0 400.0 400.0 400.0} -clock /designs/alu/timing/clock_domains/domain_1/func_clk -name alu.sdc_line_29_1_1 {{/designs/alu/ports_in/alucontrol[2]}}
+external_delay -accumulate -input {400.0 400.0 400.0 400.0} -clock /designs/alu/timing/clock_domains/domain_1/func_clk -name alu.sdc_line_29_2_1 {{/designs/alu/ports_in/alucontrol[1]}}
+external_delay -accumulate -input {400.0 400.0 400.0 400.0} -clock /designs/alu/timing/clock_domains/domain_1/func_clk -name alu.sdc_line_29_3_1 {{/designs/alu/ports_in/alucontrol[0]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/alu/timing/clock_domains/domain_1/func_clk -name alu.sdc_line_32 {{/designs/alu/ports_out/flags[3]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/alu/timing/clock_domains/domain_1/func_clk -name alu.sdc_line_32_4_1 {{/designs/alu/ports_out/flags[2]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/alu/timing/clock_domains/domain_1/func_clk -name alu.sdc_line_32_5_1 {{/designs/alu/ports_out/flags[1]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/alu/timing/clock_domains/domain_1/func_clk -name alu.sdc_line_32_6_1 {{/designs/alu/ports_out/flags[0]}}
+path_group -paths [specify_paths -to /designs/alu/timing/clock_domains/domain_1/func_clk]  -name func_clk -group /designs/alu/timing/cost_groups/func_clk -user_priority -1047552
+# BEGIN DFT SECTION
+::legacy::set_attribute -quiet dft_scan_style muxed_scan /
+::legacy::set_attribute -quiet dft_scanbit_waveform_analysis false /
+# END DFT SECTION
+::legacy::set_attribute -quiet qos_by_stage {{to_generic {wns -11111111} {tns -111111111} {vep -111111111} {area 6092} {cell_count 1643} {utilization  0.00} {runtime 0 28 0 9} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 6918} {cell_count 2827} {utilization  0.00} {runtime 2 32 3 13} }{reify {wns 633} {tns 0} {vep 0} {area 2040} {cell_count 1044} {utilization  0.00} {runtime 5 37 8 22} }{global_incr_map {wns 788} {tns 0} {vep 0} {area 2069} {cell_count 1043} {utilization  0.00} {runtime 1 38 0 22} }{incr_opt {wns 214748365} {tns 0} {vep 0} {area 2026} {cell_count 1042} {utilization  0.00} {runtime 1 39 0 23} }} /designs/alu
+::legacy::set_attribute -quiet hdl_filelist {{default -sv {SYNTHESIS} {alu.sv} {}}} /designs/alu
+::legacy::set_attribute -quiet hdl_user_name alu /designs/alu
+::legacy::set_attribute -quiet verification_directory fv/alu /designs/alu
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[31]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[30]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[29]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[28]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[27]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[26]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[25]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[24]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[23]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[22]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[21]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[20]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[19]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[18]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[17]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[16]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[15]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[14]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[13]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[12]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[11]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[10]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[9]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[8]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[7]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[6]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[5]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[4]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[3]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[2]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[1]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/a[0]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[31]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[30]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[29]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[28]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[27]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[26]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[25]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[24]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[23]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[22]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[21]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[20]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[19]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[18]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[17]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[16]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[15]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[14]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[13]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[12]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[11]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[10]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[9]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[8]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[7]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[6]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[5]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[4]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[3]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[2]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[1]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/b[0]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/alucontrol[3]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/alucontrol[2]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/alucontrol[1]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_in/alucontrol[0]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[31]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[30]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[29]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[28]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[27]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[26]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[25]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[24]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[23]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[22]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[21]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[20]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[19]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[18]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[17]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[16]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[15]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[14]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[13]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[12]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[11]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[10]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[9]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[8]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[7]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[6]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[5]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[4]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[3]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[2]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[1]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/result[0]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/flags[3]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/flags[2]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/flags[1]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/alu/ports_out/flags[0]}
+::legacy::set_attribute -quiet logical_hier false /designs/alu/subdesigns/csa_tree_eq_36_21_group_101
+::legacy::set_attribute -quiet logical_hier false /designs/alu/subdesigns/add_unsigned_63
+::legacy::set_attribute -quiet rtlop_info {{} 0 0 0 3 0 7 0 2 1 1 0} /designs/alu/instances_hier/final_adder_add_16_36
+::legacy::set_attribute -quiet logical_hier false /designs/alu/subdesigns/add_unsigned_66
+::legacy::set_attribute -quiet rtlop_info {{} 0 0 0 3 0 7 0 2 1 1 0} /designs/alu/instances_hier/final_adder_mux_result_20_9
+::legacy::set_attribute -quiet logical_hier false /designs/alu/subdesigns/shift_left_vlog_unsigned
+::legacy::set_attribute -quiet rtlop_info {{} 0 0 0 3 0 21 0 2 1 1 0} /designs/alu/instances_hier/sll_28_24
+::legacy::set_attribute -quiet logical_hier false /designs/alu/subdesigns/arith_shift_right_vlog_unsigned
+::legacy::set_attribute -quiet logical_hier false /designs/alu/subdesigns/shift_right_vlog_unsigned

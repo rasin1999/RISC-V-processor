@@ -1,0 +1,23 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2016 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 16.13-s036_1, built Tue Dec 20 2016
+Options: 
+Date:    Mon Feb 20 00:18:30 2023
+Host:    CadenceServer3.localdomain (x86_64 w/Linux 2.6.32-642.el6.x86_64) (8cores*16cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 20480KB) (24491252KB)
+OS:      CentOS release 6.8 (Final)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+Sourcing GUI preferences file /home/vlsi19/.cadence/genus/gui.tcl...
+
+Another Ctrl-C within 1 second will terminate the tool.
+Finished loading tool scripts (11 seconds elapsed).
+
+WARNING: This version of the tool is 2253 days old.
+genus@root:> csh
+invalid command name "csh"
+genus@root:> cd ..

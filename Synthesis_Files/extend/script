@@ -1,0 +1,220 @@
+######################################################################
+
+# Created by Genus(TM) Synthesis Solution 16.13-s036_1 on Mon Feb 20 00:19:47 +0600 2023
+
+# This file contains the RC script for /designs/extend
+
+######################################################################
+
+::legacy::set_attribute -quiet init_lib_search_path /home/cad/VLSI2Lab/Digital/library/ /
+::legacy::set_attribute -quiet common_ui false /
+::legacy::set_attribute -quiet design_mode_process no_value /
+::legacy::set_attribute -quiet phys_assume_met_fill 0.0 /
+::legacy::set_attribute -quiet phys_use_invs_extraction false /
+::legacy::set_attribute -quiet phys_route_blockage_free false /
+::legacy::set_attribute -quiet runtime_by_stage { {to_generic 0 34 0 9}  {first_condense 0 35 0 9}  {reify 0 35 0 9}  {global_incr_map 0 35 0 9}  {incr_opt 0 35 0 9} } /
+::legacy::set_attribute -quiet tinfo_tstamp_file .rs_vlsi19.tstamp /
+::legacy::set_attribute -quiet syn_map_effort medium /
+::legacy::set_attribute -quiet syn_opt_effort medium /
+::legacy::set_attribute -quiet flow_metrics_snapshot_uuid 51a73618 /
+::legacy::set_attribute -quiet phys_use_segment_parasitics true /
+::legacy::set_attribute -quiet probabilistic_extraction true /
+::legacy::set_attribute -quiet ple_correlation_factors {1.9000 2.0000} /
+::legacy::set_attribute -quiet maximum_interval_of_vias inf /
+::legacy::set_attribute -quiet interconnect_mode wireload /
+::legacy::set_attribute -quiet wireload_mode enclosed /
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X12
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X3
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X6
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKAND2X8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX12
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX16
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX20
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX3
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX6
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKBUFX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX12
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX16
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX20
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX3
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX6
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKINVX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X12
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X3
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X6
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKMX2X8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKXOR2X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKXOR2X2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKXOR2X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/CLKXOR2X8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY1X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY1X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY2X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY2X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY3X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY3X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY4X1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/DLY4X4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFHQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFHQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFHQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFHQX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFNSRX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFNSRX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFNSRX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFNSRXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFQXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRHQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRHQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRHQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRHQX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFRXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSHQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSHQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSHQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSHQX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRHQX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRHQX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRHQX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRHQX8
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSRXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFSXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFTRX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFTRX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFTRX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFTRXL
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFX1
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFX2
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFX4
+::legacy::set_attribute -quiet avoid true /libraries/slow_vdd1v0/libcells/SDFFXL
+::legacy::set_attribute -quiet tree_type balanced_tree /libraries/slow_vdd1v0/operating_conditions/PVT_0P9V_125C
+::legacy::set_attribute -quiet tree_type balanced_tree /libraries/slow_vdd1v0/operating_conditions/_nominal_
+# BEGIN MSV SECTION
+# END MSV SECTION
+define_clock -name func_clk -domain domain_1 -period 10000.0 -divide_period 1 -rise 0 -divide_rise 1 -fall 3 -divide_fall 5 -design /designs/extend {}
+define_cost_group -design /designs/extend -name func_clk
+external_delay -accumulate -input {400.0 400.0 400.0 400.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_29 {{/designs/extend/ports_in/immsrc[2]}}
+external_delay -accumulate -input {400.0 400.0 400.0 400.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_29_1_1 {{/designs/extend/ports_in/immsrc[1]}}
+external_delay -accumulate -input {400.0 400.0 400.0 400.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_29_2_1 {{/designs/extend/ports_in/immsrc[0]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32 {{/designs/extend/ports_out/immext[31]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_3_1 {{/designs/extend/ports_out/immext[30]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_4_1 {{/designs/extend/ports_out/immext[29]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_5_1 {{/designs/extend/ports_out/immext[28]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_6_1 {{/designs/extend/ports_out/immext[27]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_7_1 {{/designs/extend/ports_out/immext[26]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_8_1 {{/designs/extend/ports_out/immext[25]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_9_1 {{/designs/extend/ports_out/immext[24]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_10_1 {{/designs/extend/ports_out/immext[23]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_11_1 {{/designs/extend/ports_out/immext[22]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_12_1 {{/designs/extend/ports_out/immext[21]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_13_1 {{/designs/extend/ports_out/immext[20]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_14_1 {{/designs/extend/ports_out/immext[19]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_15_1 {{/designs/extend/ports_out/immext[18]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_16_1 {{/designs/extend/ports_out/immext[17]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_17_1 {{/designs/extend/ports_out/immext[16]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_18_1 {{/designs/extend/ports_out/immext[15]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_19_1 {{/designs/extend/ports_out/immext[14]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_20_1 {{/designs/extend/ports_out/immext[13]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_21_1 {{/designs/extend/ports_out/immext[12]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_22_1 {{/designs/extend/ports_out/immext[11]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_23_1 {{/designs/extend/ports_out/immext[10]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_24_1 {{/designs/extend/ports_out/immext[9]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_25_1 {{/designs/extend/ports_out/immext[8]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_26_1 {{/designs/extend/ports_out/immext[7]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_27_1 {{/designs/extend/ports_out/immext[6]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_28_1 {{/designs/extend/ports_out/immext[5]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_29_1 {{/designs/extend/ports_out/immext[4]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_30_1 {{/designs/extend/ports_out/immext[3]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_31_1 {{/designs/extend/ports_out/immext[2]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_32_1 {{/designs/extend/ports_out/immext[1]}}
+external_delay -accumulate -output {600.0 600.0 600.0 600.0} -clock /designs/extend/timing/clock_domains/domain_1/func_clk -name extend.sdc_line_32_33_1 {{/designs/extend/ports_out/immext[0]}}
+path_group -paths [specify_paths -to /designs/extend/timing/clock_domains/domain_1/func_clk]  -name func_clk -group /designs/extend/timing/cost_groups/func_clk -user_priority -1047552
+# BEGIN DFT SECTION
+::legacy::set_attribute -quiet dft_scan_style muxed_scan /
+::legacy::set_attribute -quiet dft_scanbit_waveform_analysis false /
+# END DFT SECTION
+::legacy::set_attribute -quiet qos_by_stage {{to_generic {wns -11111111} {tns -111111111} {vep -111111111} {area 285} {cell_count 111} {utilization  0.00} {runtime 0 34 0 9} }{first_condense {wns -11111111} {tns -111111111} {vep -111111111} {area 188} {cell_count 77} {utilization  0.00} {runtime 0 35 0 9} }{reify {wns 8501} {tns 0} {vep 0} {area 72} {cell_count 45} {utilization  0.00} {runtime 0 35 0 9} }{global_incr_map {wns 8503} {tns 0} {vep 0} {area 72} {cell_count 45} {utilization  0.00} {runtime 0 35 0 9} }{incr_opt {wns 214748365} {tns 0} {vep 0} {area 72} {cell_count 44} {utilization  0.00} {runtime 0 35 0 9} }} /designs/extend
+::legacy::set_attribute -quiet hdl_filelist {{default -sv {SYNTHESIS} {extend.sv} {}}} /designs/extend
+::legacy::set_attribute -quiet hdl_user_name extend /designs/extend
+::legacy::set_attribute -quiet verification_directory fv/extend /designs/extend
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[31]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[30]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[29]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[28]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[27]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[26]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[25]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[24]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[23]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[22]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[21]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[20]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[19]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[18]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[17]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[16]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[15]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[14]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[13]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[12]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[11]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[10]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[9]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[8]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/instr[7]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/immsrc[2]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/immsrc[1]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_in/immsrc[0]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[31]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[30]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[29]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[28]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[27]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[26]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[25]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[24]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[23]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[22]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[21]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[20]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[19]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[18]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[17]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[16]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[15]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[14]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[13]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[12]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[11]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[10]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[9]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[8]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[7]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[6]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[5]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[4]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[3]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[2]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[1]}
+::legacy::set_attribute -quiet min_transition no_value {/designs/extend/ports_out/immext[0]}
