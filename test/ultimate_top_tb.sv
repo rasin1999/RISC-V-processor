@@ -1,0 +1,127 @@
+module ultimate_top_tb; 
+
+  parameter FRAME_SIZE = 8;
+  parameter ADDRESS_LENGTH = 32; 
+  parameter DATA_LENGTH		= 32; 
+  
+  logic clk, reset_n; 
+  logic ss, sclk, mosi; 
+  logic core_select; 
+
+  wire miso; 
+
+  logic [FRAME_SIZE-1:0] address_frame; 
+  logic [DATA_LENGTH-1:0] data_sent; 
+  logic [ADDRESS_LENGTH-1:0] address_write, address_read; 
+  logic [FRAME_SIZE-1:0] data_received = 32'h0; 
+  logic [ADDRESS_LENGTH-1:0] address;
+
+	int fd;
+	bit[31:0] line;
+	int size = 0; 
+	int start_bit = 0; 
+	int end_bit = 0; 
+  
+  initial begin
+        fd = $fopen("../test/store_example.txt", "rb"); 
+  end 
+  
+    initial begin
+        clk <= 0; 
+        reset_n <= 1; 
+        ss <= 1; 
+        sclk <= 0; 
+        mosi <= 0; 
+        core_select <= 0; 
+    end
+
+    always begin
+        #5 clk = ~clk; 
+    end
+
+    initial begin
+        @(posedge clk); 
+        reset_n <= 0; 
+        @(posedge clk); 
+        reset_n <= 1; 
+		
+		size = 0; 
+	  	while(!$feof(fd)) begin
+			address = size; 
+			address_write = {address[30:0], 1'b1}; 
+			$fscanf(fd, "%H", line); 
+			data_sent = line; 
+			
+			
+			//Sending adress for write
+			send_data(address_write); 
+
+			//Sending data 
+			send_data(data_sent); 
+			
+			//Sending address for read
+			//address_read = {address[30:0], 1'b0}; 
+			
+			size = size + 1; 
+
+		end 
+		$display("Number of Instruction is %d", size); 
+		//$finish; 
+		@(negedge clk)
+		core_select <= 1; 
+		
+		#40000; 
+		$finish;
+    end 
+
+
+     task wait_2(); 
+    	repeat(2) @(posedge clk); 
+ 	 endtask 
+
+  task check_case(); 
+    if(data_sent == data_received) 
+      $display("Data Sent = %8h Data Received = %8h Status: Passed!!", data_sent, data_received);
+    else 
+      $display("Data Sent = %8h Data Received = %8h Status: Failed!!", data_sent, data_received);
+  endtask 
+  
+  task send_data(input [DATA_LENGTH-1:0] data); 
+  			send_receive_frame(data[7:0]); 
+			wait_2(); 
+			send_receive_frame(data[15:8]); 
+			wait_2(); 
+			send_receive_frame(data[23:16]); 
+			wait_2(); 
+			send_receive_frame(data[31:24]); 
+			wait_2(); 
+	endtask
+
+  task send_receive_frame(input [FRAME_SIZE-1:0]data_sent); 
+    ss <= 0; 
+    wait_2(); 
+    for(int i = 0; i < FRAME_SIZE; i++) begin
+      sclk <= ~sclk; 
+      mosi <= data_sent[i];
+      data_received <= {miso, data_received[FRAME_SIZE-1:1]}; 
+      wait_2(); 
+      sclk <= ~sclk; 
+      wait_2(); 
+    end 
+    ss <= 1; 
+    wait_2(); 
+  endtask 
+
+  
+  ultimate_top DUT(
+    .clk(clk), 
+    .rst_n(reset_n), 
+    .core_select(core_select), 
+    .ss(ss), 
+    .sclk(sclk), 
+    .mosi(mosi), 
+
+    .miso(miso)
+  ); 
+
+  endmodule
